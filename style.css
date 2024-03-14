@@ -22,7 +22,7 @@ body {
     margin-top: 20px;
 }
 
-.login-form input, .register-form input, .recover-form input,
+.login-form input, .recover-form input,
 .login-form button, .register-form button, .recover-form button {
     width: calc(100% - 22px); /* Same width as inputs */
     padding: 10px;
@@ -75,4 +75,26 @@ body {
     text-decoration: none;
     margin-top: 20px; /* Add margin to the top */
     display: inline-block; /* Make the links inline-block */
+}
+
+footer {
+    background-color: #333; /* Darker background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.register-form-input{
+    width: calc(100% - 22px); /* Same width as inputs */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444; /* Darker border */
+    border-radius: 5px;
+    background-color: #333; /* Darker input background */
+    color: #fff; /* Text color */
+    box-sizing: border-box;
 }
