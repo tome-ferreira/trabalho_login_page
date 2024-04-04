@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    
+    <link href="style/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+
+<body >
+    <div class="mytasks-body">
+        <div class="container-fluid">
+            <!-- Primeira linha -->
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <img class="profile-img" src="assets/images/pfp.jpg" alt="Profile picture">
+                </div>
+                <div class="col">
+                    <h1 class="mytasks-hello-msg mb-0">Hello Tomé</h1>
+                </div>
+                <div class="col-12 col-sm">
+                    <div class="d-flex justify-content-end">
+                        <a href="manageAccount.html" class="btn btn-primary btn-costum"><i class="fas fa-user icon-padding"></i>Manage account</a>
+                        <a href="/index.html" class="btn btn-primary btn-costum ms-2"><i class="fas fa-sign-out-alt icon-padding"></i>Log out</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Segunda linha -->
+            <div class="row mt-3 align-items-center">
+                <div class="col">
+                    <h2>My Tasks</h2>
+                </div>
+                <div class="col-auto">
+                    <button id="newTaskButton" type="button" class="btn btn-primary btn-costum">
+                        <i class="fas fa-plus"></i> New Task
+                    </button>
+                    
+                    <div id="popup" class="popup">
+                        <div class="popup-content">
+                            <span id="closeButton" class="close-button">&times;</span>
+                            <h1>New task.</h1>
+                            <h3>Description</h3>
+                            <div>
+                                <textarea id="taskInput" placeholder=""></textarea>
+                            </div>
+                            <h3>Date</h3>
+                            <div>
+                                <input type="date" id="taskDate">
+                            </div>
+                            <div>
+                                <a class="btn btn-primary btn-costum mt-3" href="#">Save</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+        <!-- Terceira linha  Tabla -->
+        <div class="row mt-3">
+            <div class="col">
+                <table class="table table-costum">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col" class="w-60">Task</th>
+                            <th scope="col" class="w-20">Date</th>
+                            <th scope="col" class="w-20">State</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tbody>
+                            <tr>
+                                <td class="task-name">Fazer o Lab 1 de PW</td>
+                                <td class="task-date">4-03-2024</td>
+                                <td><input type="checkbox" checked disabled></td>
+                                <td><button class="btn btn-primary btn-costum">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td class="task-name">Fazer o Lab 2 de PW</td>
+                                <td class="task-date">27-03-2024</td>
+                                <td><input type="checkbox" disabled></td>
+                                <td><button class="btn btn-primary btn-costum">Edit</button></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                        
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+
+                <div id="editPopup" class="popup">
+                    <div class="popup-content">
+                        <span id="editCloseButton" class="close-button">&times;</span>
+                        <h1>Edit task.</h1>
+                        <h3>Description</h3>
+                        <div>
+                            <textarea id="editTaskInput" placeholder="Task description"></textarea>
+                        </div>
+                        <h3>Date</h3>
+                        <div>
+                            <input type="date" id="editTaskDate">
+                        </div>
+                        <div>
+                            <a id="saveEditButton" class="btn btn-primary btn-costum mt-3" href="#">Save</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Tomé Ferreira. All rights reserved.</p>
+    </footer>
+
+    <script src="style/site.js"></script>
+</body>
+
+</html>
